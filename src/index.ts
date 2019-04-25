@@ -1,4 +1,9 @@
-import BaseStore from './stores/BaseStore';
+import * as ReactDOM from 'react-dom';
+import * as React from 'react';
 
+import Main from './packages/base/redux-saga/main';
 
-console.log(1,3, 'sadaskdlkjaslkdj');
+const e = React.createElement;
+const domContainer = document.querySelector('#main');
+
+ReactDOM.render(e(Main, { name: 'Goshan' }), domContainer);

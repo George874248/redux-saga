@@ -16,11 +16,15 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.js|.ts|.tsx$/, exclude: /node_modules/, loader: "babel-loader" }
+            {
+                test: /\.js|.ts|.tsx$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
+            }
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js', '.json']
+        extensions: ['.ts', '.tsx', '.js']
     },
     devtool: 'inline-source-map',
     plugins: [
@@ -31,7 +35,7 @@ module.exports = {
             title: 'Hot Module Replacement',
             template: 'index.html'
         }),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
     ],
     devServer: {
         contentBase: path.join(__dirname, 'build'),
