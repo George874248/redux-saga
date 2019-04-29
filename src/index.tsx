@@ -6,10 +6,12 @@ import { render } from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-// components
-import Main from './packages/base/redux-saga/main';
+import reducer from './packages/base/redux-saga/reducers/add'
 
-const store = createStore(reducer);
+// components
+import Main from './packages/base/redux-saga/components/main';
+
+const store = createStore(reducer) ;
 
 render(
     <Provider store={store}>

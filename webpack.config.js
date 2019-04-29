@@ -8,7 +8,7 @@ const pathsToClean = ['build'];
 module.exports = {
     mode: 'development',
     entry: {
-        app: './src/index.ts',
+        app: './src/index.tsx',
     },
     output: {
         filename: '[name].js',

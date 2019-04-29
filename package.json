@@ -2,7 +2,7 @@
   "name": "redux-saga",
   "version": "1.0.0",
   "description": "Test sunc application",
-  "main": "src/index.ts",
+  "main": "src/index.tsx",
   "scripts": {
     "test": "jest --config ./jest.config.json",
     "start": "webpack&&webpack-dev-server --open --watch --inline --mode development"
